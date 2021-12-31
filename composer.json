@@ -1,0 +1,27 @@
+{
+    "name": "tremendo/oxid-dhlstatus",
+    "description": "Integriert die DHL-Sendungsverfolgung in den OXID eShop",
+    "type": "oxideshop-module",
+    "keywords": ["oxid", "modules", "DHL", "Status", "Tracking", "Paket", "Sendungsverfolgung", "Lieferstatus"],
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Jan Loeper",
+            "email": "kalte_sterne@arcor.de"
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "ext-json": "*"
+    },
+    "extra": {
+      "oxideshop": {
+        "target-directory": "tremendo/dhlstatus"
+      }
+    },
+    "autoload": { 
+      "psr-4": {
+        "Tremendo\\DhlStatus\\": "../../../source/modules/tremendo/dhlstatus/src"
+      }
+    }
+  }

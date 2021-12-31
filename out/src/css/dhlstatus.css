@@ -1,0 +1,76 @@
+.tremendo-dhlstatus-timeline {
+    padding-top: 20px;
+}
+
+.tremendo-dhlstatus-timeline ol {
+    padding: 0;
+    display: inline-block;
+}
+
+.tremendo-dhlstatus-timeline ol li {
+    list-style: none;
+    margin: auto;
+    margin-left: 1em;
+    min-height: 50px;
+    border-left: 26px transparent solid;
+    border-image:url("../img/street.png") 20% 48 repeat;
+    padding: 0 0 30px 45px;
+    position: relative;
+}
+
+.tremendo-dhlstatus-timeline ol li:last-child {
+    border-left: 26px transparent solid;
+    border-image: none;
+}
+
+.tremendo-dhlstatus-timeline ol li:before {
+    position: absolute;
+    content: " ";
+    border: 6px solid rgba(255, 205, 7, 1);
+    border-radius: 500%;
+    background: #d40511;
+    height: 48px;
+    width: 48px;
+    left: -36px;
+    top: -5px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tremendo-dhlstatus-timeline ol li.delivered:before,
+.tremendo-dhlstatus-timeline ol li.pre-transit:before {
+    height: 58px;
+    width: 58px;
+    left: -44px;
+    top: -10px;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.tremendo-dhlstatus-timeline ol li.delivered:before {
+    content: "\f00c";
+}
+
+.tremendo-dhlstatus-timeline ol li.transit:before {
+    content: "\f0d1";
+}
+
+.tremendo-dhlstatus-timeline ol li.pre-transit:before {
+    content: "\f466";
+}
+
+.tremendo-dhlstatus-timeline ol li .timestamp {
+    color: #888;
+    position: relative;
+    font-size: 14px;
+}
+
+.tremendo-dhlstatus-timeline ol li .event {
+    color: #333;
+}
