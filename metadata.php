@@ -21,7 +21,7 @@ $aModule = [
         'en' => 'DHL Shipment Status module for OXID eShop'
     ],
     'thumbnail'    => 'logo.png',
-    'version'      => '0.1',
+    'version'      => '0.5',
     'author'       => 'Jan Loeper',
     'email'        => 'kalte_sterne@arcor.de',
     'url'          => 'https://github.com/KalteSterne/oxid-dhlstatus',
